@@ -106,8 +106,8 @@ class (Monad m) => FSAction m where
 
 instance FSAction RealFS where
   printHelp = do
-    liftIO $ putStrLn "pwd\n - current directory\
- \ls\n - file in this directory\
+    liftIO $ putStrLn "pwd - current directory\n
+ \ls - file in this directory\n
  \ls-all [dir name] - file in tree of directories\n\
  \cd [path] - set directory\n\
  \rmd [dir name] - remove directory\n\
